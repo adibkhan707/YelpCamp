@@ -11,8 +11,7 @@ var methodOverride=require ("method-override");
 var flash=require("connect-flash");
 
 var app=express();
-//mongoose.connect("mongodb://localhost:27017/yelp_camp",{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
-mongoose.connect("mongodb+srv://adib:vAlQBPHVERiTIlUV@cluster0-jffyo.mongodb.net/test?retryWrites=true&w=majority",{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
+mongoose.connect(process.env.DATABASEURL,{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 app.use(methodOverride('_method'));
 app.use(flash());
 var Campground=require("./models/campgrounds");
