@@ -1,0 +1,16 @@
+.thumbnail img{
+width: 100%;
+}
+
+.thumbnail{
+    padding: 0;
+}
+
+a, a:active, a:focus{
+    outline: none; /* Works in Firefox, Chrome, IE8 and above */ 
+}
+
+.deleteForm{
+    display:inline;
+}
+:focus {outline:none !important;}
