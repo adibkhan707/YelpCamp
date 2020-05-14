@@ -47,6 +47,7 @@ app.use(indexRoutes);
 
 //seedDB();
 
-app.listen(80,()=>{
+var port = process.env.PORT || 8080;
+app.listen(port,()=>{
     console.log("Yelp app has started!");
 })
