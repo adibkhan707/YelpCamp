@@ -47,6 +47,6 @@ app.use(indexRoutes);
 
 //seedDB();
 
-app.listen(700,()=>{
+app.listen(80,()=>{
     console.log("Yelp app has started!");
 })
