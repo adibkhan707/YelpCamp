@@ -45,8 +45,6 @@ app.use("/campgrounds/:id/comments",commentRoutes);
 app.use("/campgrounds",campgroundRoutes);
 app.use(indexRoutes);
 
-
-
 //seedDB();
 
 app.listen(700,()=>{
