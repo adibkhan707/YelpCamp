@@ -11,7 +11,8 @@ var methodOverride=require ("method-override");
 var flash=require("connect-flash");
 
 var app=express();
-mongoose.connect(process.env.DATABASEURL,{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
+//console.log(process.env.DATABASEURL)
+mongoose.connect("mongodb://localhost:27017/yelp_camp",{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 app.use(methodOverride('_method'));
 app.use(flash());
 var Campground=require("./models/campgrounds");

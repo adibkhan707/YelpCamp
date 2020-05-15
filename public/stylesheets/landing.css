@@ -80,3 +80,5 @@ body{
 .no-cssanimations .slideshow li {
 	opacity: 1;
 }
+
+:focus {outline:none !important;}
